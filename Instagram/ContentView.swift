@@ -22,7 +22,7 @@ struct ContentView: View {
             Divider()
             EmailTextField(email: $email)
             PasswordTextField(password: $password)
-            SignInButton()
+            SignInButton(action: {}, label: "Sign In")
             Divider()
             SignUpView()            
         }

@@ -17,8 +17,6 @@ struct EmailTextField: View {
             Image(systemName: "envelope.fill")
                 .foregroundColor(Color(red: 0, green: 0, blue: 0, opacity: 0.15))
             TextField("Email", text: $email)
-        }.padding()
-            .border(Color(red: 0, green: 0, blue: 0, opacity: 0.15), width: 1)
-            .padding([.leading, .trailing, .top])
+        }.modifier(TextfieldModifire())
     }
 }

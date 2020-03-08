@@ -17,8 +17,6 @@ struct PasswordTextField: View {
             Image(systemName: "lock.fill")
                 .foregroundColor(Color(red: 0, green: 0, blue: 0, opacity: 0.15))
             SecureField("password", text: $password)
-        }.padding()
-            .border(Color(red: 0, green: 0, blue: 0, opacity: 0.15), width: 1)
-            .padding([.leading, .trailing, .top])
+        }.modifier(TextfieldModifire())
     }
 }

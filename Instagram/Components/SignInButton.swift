@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct SignInButton: View {
+    
+    var action: () -> Void
+    var label: String
+    
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        Button(action: action) {
             HStack {
                 Spacer()
-                Text("Sign In")
+                Text(label)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                 Spacer()
             }
-        }.padding()
-            .background(Color.primary)
-            .cornerRadius(5)
-            .shadow(radius: 10, x: 0, y: 10)
-            .padding()
+        }.modifier(SignInButtonModifier())
     }
 }

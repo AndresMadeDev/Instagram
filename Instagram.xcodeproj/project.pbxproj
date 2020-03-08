@@ -18,6 +18,8 @@
 		C191AAE723FC4B96001C9724 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AAE623FC4B96001C9724 /* HeaderView.swift */; };
 		C191AAE923FC4BC2001C9724 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AAE823FC4BC2001C9724 /* EmailTextField.swift */; };
 		C191AAEC23FC4C13001C9724 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AAEB23FC4C13001C9724 /* PasswordTextField.swift */; };
+		C1A3285E2415B46500C7F184 /* Modifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3285D2415B46500C7F184 /* Modifire.swift */; };
+		C1A328602415B8FB00C7F184 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3285F2415B8FB00C7F184 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C191AAE623FC4B96001C9724 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C191AAE823FC4BC2001C9724 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		C191AAEB23FC4C13001C9724 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		C1A3285D2415B46500C7F184 /* Modifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifire.swift; sourceTree = "<group>"; };
+		C1A3285F2415B8FB00C7F184 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				C191AAE623FC4B96001C9724 /* HeaderView.swift */,
 				C191AAE823FC4BC2001C9724 /* EmailTextField.swift */,
 				C191AAEB23FC4C13001C9724 /* PasswordTextField.swift */,
+				C1A3285D2415B46500C7F184 /* Modifire.swift */,
+				C1A3285F2415B8FB00C7F184 /* Constant.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +182,8 @@
 				C191AAE323FC4AF7001C9724 /* SignInButton.swift in Sources */,
 				C191AAD023FC380E001C9724 /* SceneDelegate.swift in Sources */,
 				C191AAEC23FC4C13001C9724 /* PasswordTextField.swift in Sources */,
+				C1A328602415B8FB00C7F184 /* Constant.swift in Sources */,
+				C1A3285E2415B46500C7F184 /* Modifire.swift in Sources */,
 				C191AAD223FC380E001C9724 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-struct SignUpView: View {
+struct SignUpText: View {
     var body: some View {
         HStack{
             

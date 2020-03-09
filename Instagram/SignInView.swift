@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SignInView: View {
     
     @State var email: String = ""
     @State var password: String = ""
@@ -24,14 +24,14 @@ struct ContentView: View {
             PasswordTextField(password: $password)
             SignInButton(action: {}, label: "Sign In")
             Divider()
-            SignUpView()            
+            SignUpText()            
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SignInView()
     }
 }
 

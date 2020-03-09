@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C191AACE23FC380E001C9724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AACD23FC380E001C9724 /* AppDelegate.swift */; };
 		C191AAD023FC380E001C9724 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AACF23FC380E001C9724 /* SceneDelegate.swift */; };
-		C191AAD223FC380E001C9724 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AAD123FC380E001C9724 /* ContentView.swift */; };
+		C191AAD223FC380E001C9724 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AAD123FC380E001C9724 /* SignInView.swift */; };
 		C191AAD423FC3811001C9724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C191AAD323FC3811001C9724 /* Assets.xcassets */; };
 		C191AAD723FC3811001C9724 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C191AAD623FC3811001C9724 /* Preview Assets.xcassets */; };
 		C191AADA23FC3811001C9724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C191AAD823FC3811001C9724 /* LaunchScreen.storyboard */; };
@@ -20,13 +20,16 @@
 		C191AAEC23FC4C13001C9724 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191AAEB23FC4C13001C9724 /* PasswordTextField.swift */; };
 		C1A3285E2415B46500C7F184 /* Modifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3285D2415B46500C7F184 /* Modifire.swift */; };
 		C1A328602415B8FB00C7F184 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3285F2415B8FB00C7F184 /* Constant.swift */; };
+		C1A328622415BFFC00C7F184 /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A328612415BFFC00C7F184 /* SingUpView.swift */; };
+		C1A328642415C16700C7F184 /* UserNameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A328632415C16700C7F184 /* UserNameTextField.swift */; };
+		C1A328662415C38500C7F184 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A328652415C38500C7F184 /* SignUpButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C191AACA23FC380E001C9724 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C191AACD23FC380E001C9724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C191AACF23FC380E001C9724 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C191AAD123FC380E001C9724 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C191AAD123FC380E001C9724 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		C191AAD323FC3811001C9724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C191AAD623FC3811001C9724 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C191AAD923FC3811001C9724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		C191AAEB23FC4C13001C9724 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		C1A3285D2415B46500C7F184 /* Modifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifire.swift; sourceTree = "<group>"; };
 		C1A3285F2415B8FB00C7F184 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C1A328612415BFFC00C7F184 /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
+		C1A328632415C16700C7F184 /* UserNameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameTextField.swift; sourceTree = "<group>"; };
+		C1A328652415C38500C7F184 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +79,8 @@
 				C191AAE123FC4ACB001C9724 /* Components */,
 				C191AACD23FC380E001C9724 /* AppDelegate.swift */,
 				C191AACF23FC380E001C9724 /* SceneDelegate.swift */,
-				C191AAD123FC380E001C9724 /* ContentView.swift */,
+				C191AAD123FC380E001C9724 /* SignInView.swift */,
+				C1A328612415BFFC00C7F184 /* SingUpView.swift */,
 				C191AAD323FC3811001C9724 /* Assets.xcassets */,
 				C191AAD823FC3811001C9724 /* LaunchScreen.storyboard */,
 				C191AADB23FC3811001C9724 /* Info.plist */,
@@ -94,9 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				C191AAE223FC4AF7001C9724 /* SignInButton.swift */,
+				C1A328652415C38500C7F184 /* SignUpButton.swift */,
 				C191AAE423FC4B27001C9724 /* SignUpView.swift */,
 				C191AAE623FC4B96001C9724 /* HeaderView.swift */,
 				C191AAE823FC4BC2001C9724 /* EmailTextField.swift */,
+				C1A328632415C16700C7F184 /* UserNameTextField.swift */,
 				C191AAEB23FC4C13001C9724 /* PasswordTextField.swift */,
 				C1A3285D2415B46500C7F184 /* Modifire.swift */,
 				C1A3285F2415B8FB00C7F184 /* Constant.swift */,
@@ -178,13 +187,16 @@
 				C191AACE23FC380E001C9724 /* AppDelegate.swift in Sources */,
 				C191AAE723FC4B96001C9724 /* HeaderView.swift in Sources */,
 				C191AAE923FC4BC2001C9724 /* EmailTextField.swift in Sources */,
+				C1A328642415C16700C7F184 /* UserNameTextField.swift in Sources */,
 				C191AAE523FC4B27001C9724 /* SignUpView.swift in Sources */,
 				C191AAE323FC4AF7001C9724 /* SignInButton.swift in Sources */,
+				C1A328662415C38500C7F184 /* SignUpButton.swift in Sources */,
+				C1A328622415BFFC00C7F184 /* SingUpView.swift in Sources */,
 				C191AAD023FC380E001C9724 /* SceneDelegate.swift in Sources */,
 				C191AAEC23FC4C13001C9724 /* PasswordTextField.swift in Sources */,
 				C1A328602415B8FB00C7F184 /* Constant.swift in Sources */,
 				C1A3285E2415B46500C7F184 /* Modifire.swift in Sources */,
-				C191AAD223FC380E001C9724 /* ContentView.swift in Sources */,
+				C191AAD223FC380E001C9724 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

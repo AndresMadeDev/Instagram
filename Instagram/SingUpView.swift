@@ -21,7 +21,7 @@ struct SingUpView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
                 .clipShape(Circle())
-                .padding(.bottom, 50)
+                .padding(.bottom, 80)
             
             UserNameTextField(userName: $userName)
             EmailTextField(email: $email)
@@ -34,13 +34,13 @@ struct SingUpView: View {
             }
             SignUnButton(action: {}, label: "Sign Up")
             Divider()
-            Text("An account will allow you to save and access photo information across devices.  You can delete your account at any time and your information will not be shared")
+            Text("An account will allow you to save and access photo information across devices.  You can delete your account at any time and your information will not be shared.")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .padding()
                 .lineLimit(nil)
             
-        }
+        }.navigationBarTitle("Register", displayMode: .inline)
     }
 }
 

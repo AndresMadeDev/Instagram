@@ -15,17 +15,22 @@ struct SignInView: View {
     
     var body: some View {
         
-        VStack {
-            Spacer()
-            HeaderView()
-            Spacer()
-            Divider()
-            EmailTextField(email: $email)
-            PasswordTextField(password: $password)
-            SignInButton(action: {}, label: "Sign In")
-            Divider()
-            SignUpText()            
-        }
+        NavigationView {
+            VStack {
+                Spacer()
+                HeaderView()
+                Spacer()
+                Divider()
+                EmailTextField(email: $email)
+                PasswordTextField(password: $password)
+                SignInButton(action: {}, label: "Sign In")
+                Divider()
+                NavigationLink(destination: SingUpView()) {
+                    SignUpText()
+                }
+                
+            }
+        }.accentColor(.black)
     }
 }
 

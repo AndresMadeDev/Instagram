@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>971201596771-rftkbfj72lbf9ippieqjn7ak8qk2abi0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.971201596771-rftkbfj72lbf9ippieqjn7ak8qk2abi0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAT9VWxfEasi1vENE77kAfZ93rm9RyJxZs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>971201596771</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andres.made.Instagram</string>
+	<key>PROJECT_ID</key>
+	<string>swiftui-instagram-4f697</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swiftui-instagram-4f697.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:971201596771:ios:0f1d14c658a9a5f21b1756</string>
+	<key>DATABASE_URL</key>
+	<string>https://swiftui-instagram-4f697.firebaseio.com</string>
+</dict>
+</plist>

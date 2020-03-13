@@ -26,6 +26,8 @@
 		C1A328662415C38500C7F184 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A328652415C38500C7F184 /* SignUpButton.swift */; };
 		C1A328682418702400C7F184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1A328672418702400C7F184 /* GoogleService-Info.plist */; };
 		C1A3286A2418792C00C7F184 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A328692418792C00C7F184 /* ImagePicker.swift */; };
+		C1A3286C241C160900C7F184 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3286B241C160900C7F184 /* User.swift */; };
+		C1A3286E241C191700C7F184 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3286D241C191700C7F184 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		C1A328652415C38500C7F184 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
 		C1A328672418702400C7F184 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1A328692418792C00C7F184 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C1A3286B241C160900C7F184 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C1A3286D241C191700C7F184 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				C191AAD123FC380E001C9724 /* SignInView.swift */,
 				C1A328612415BFFC00C7F184 /* SingUpView.swift */,
 				C1A328692418792C00C7F184 /* ImagePicker.swift */,
+				C1A3286B241C160900C7F184 /* User.swift */,
+				C1A3286D241C191700C7F184 /* Extensions.swift */,
 				C191AAD323FC3811001C9724 /* Assets.xcassets */,
 				C191AAD823FC3811001C9724 /* LaunchScreen.storyboard */,
 				C1A328672418702400C7F184 /* GoogleService-Info.plist */,
@@ -267,8 +273,10 @@
 				C1A3286A2418792C00C7F184 /* ImagePicker.swift in Sources */,
 				C191AAE323FC4AF7001C9724 /* SignInButton.swift in Sources */,
 				C1A328662415C38500C7F184 /* SignUpButton.swift in Sources */,
+				C1A3286C241C160900C7F184 /* User.swift in Sources */,
 				C1A328622415BFFC00C7F184 /* SingUpView.swift in Sources */,
 				C191AAD023FC380E001C9724 /* SceneDelegate.swift in Sources */,
+				C1A3286E241C191700C7F184 /* Extensions.swift in Sources */,
 				C191AAEC23FC4C13001C9724 /* PasswordTextField.swift in Sources */,
 				C1A328602415B8FB00C7F184 /* Constant.swift in Sources */,
 				C1A3285E2415B46500C7F184 /* Modifire.swift in Sources */,

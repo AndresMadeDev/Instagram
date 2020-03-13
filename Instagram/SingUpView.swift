@@ -55,9 +55,13 @@ struct SingUpView: View {
                         let firesstoreRoot = Firestore.firestore()
                         let firestoreUsers = firesstoreRoot.collection("users")
                         let firestoreUserId = firestoreUsers.document(userId)
-                        let userInfor = ["username": self.userName, "email": self.email, "profileImageUrl": metaImageUrl]
+//                        let userInfor = ["username": self.userName, "email": self.email, "profileImageUrl": metaImageUrl]
+                        let user = User.init(uid: userId, email: self.email, profileImage: metaImageUrl, username: self.userName, bio: "", keywords: [])
+                        guard let dict = try? user.toDictionay() else {return}
                         
-                        firestoreUserId.setData(userInfor)
+                        guard let decoderUser = try? User.init(fromDictionary: dict) else {return}
+                        print(decoderUser.username)
+                        firestoreUserId.setData(dict)
                         
                     }
                 }

@@ -7,92 +7,56 @@
 //
 
 import SwiftUI
-import FirebaseAuth
-import Firebase
-import FirebaseStorage
+
 
 struct SingUpView: View {
+
+     @ObservedObject var signupViewModel = SignupViewModel()
     
-    @State var userName: String = ""
-    @State var email: String = ""
-    @State var password: String = ""
-    @State var showImagePicker: Bool = false
-    @State var image: Image = Image("user-placeholder")
-    @State var imageData: Data = Data()
-    
-    
-    
-    func signUP(){
-//        Firebase.createAccount(userName: userName, email: email, password: password, imageData: imageData)
-        
-        Auth.auth().createUser(withEmail: email, password: password) { (authData, error) in
-            if error != nil {
-                return
-            }
-            guard let userId = authData?.user.uid else { return }
-            let storageRoot = Storage.storage().reference(forURL: "gs://swiftui-instagram-4f697.appspot.com")
-            let storageAvatar = storageRoot.child("avatar")
-            let storageAvatarUserId = storageAvatar.child(userId)
-            let metadata = StorageMetadata()
-            metadata.contentType = "image/jpg"
-            
-            storageAvatarUserId.putData(self.imageData, metadata: metadata) { (storageMetadata, error) in
-                if error != nil {
-                    return
-                }
-                
-                storageAvatarUserId.downloadURL { (url, err) in
-                    if let metaImageUrl = url?.absoluteString {
-                        if let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest(){
-                            changeRequest.photoURL = url
-                            changeRequest.displayName = self.userName
-                            changeRequest.commitChanges { (error) in
-                                if error != nil {
-                                    return
-                                }
-                            }
-                        }
-                        let firesstoreRoot = Firestore.firestore()
-                        let firestoreUsers = firesstoreRoot.collection("users")
-                        let firestoreUserId = firestoreUsers.document(userId)
-//                        let userInfor = ["username": self.userName, "email": self.email, "profileImageUrl": metaImageUrl]
-                        let user = User.init(uid: userId, email: self.email, profileImage: metaImageUrl, username: self.userName, bio: "", keywords: [])
-                        guard let dict = try? user.toDictionay() else {return}
-                        
-                        guard let decoderUser = try? User.init(fromDictionary: dict) else {return}
-                        print(decoderUser.username)
-                        firestoreUserId.setData(dict)
-                        
-                    }
-                }
-            }
+    func signup(){
+       
+        signupViewModel.signup(username: signupViewModel.username, email: signupViewModel.email, password: signupViewModel.password, imageData: signupViewModel.imageData, completed: { (user) in
+            print(user.email)
+            self.clean()
+        }) { (errorMessage) in
+            print("Error \(errorMessage)")
+            self.signupViewModel.showAlert = true
+            self.signupViewModel.errorString = errorMessage
+            self.clean()
         }
-        
+    }
+    
+    func clean(){
+        self.signupViewModel.username = ""
+        self.signupViewModel.email = ""
+        self.signupViewModel.password = ""
     }
     
     var body: some View {
         VStack {
-            image
+            signupViewModel.image
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
                 .clipShape(Circle())
                 .padding(.bottom, 80)
                 .onTapGesture {
-                    self.showImagePicker = true
+                    self.signupViewModel.showImagePicker = true
             }
             
-            UserNameTextField(userName: $userName)
-            EmailTextField(email: $email)
+            UserNameTextField(userName: $signupViewModel.username)
+            EmailTextField(email: $signupViewModel.email)
             VStack(alignment: .leading) {
-                PasswordTextField(password: $password)
+                PasswordTextField(password: $signupViewModel.password)
                     
                 Text("At least 8 charaters are requierd")
                     .font(.footnote)
                     .foregroundColor(.gray)
                     .padding([.leading])
             }
-            SignUnButton(action: signUP, label: "Sign Up")
+            SignUnButton(action: signup, label: "Sign Up").alert(isPresented: $signupViewModel.showAlert){
+                Alert(title: Text("Error"), message: Text(self.signupViewModel.errorString), dismissButton: .default(Text("Ok")))
+            }
             Divider()
             Text("An account will allow you to save and access photo information across devices.  You can delete your account at any time and your information will not be shared.")
                 .font(.footnote)
@@ -100,8 +64,8 @@ struct SingUpView: View {
                 .padding()
                 .lineLimit(nil)
             
-        }.sheet(isPresented: $showImagePicker){
-            ImagePicker(showImagePicker: self.$showImagePicker, pickedImage: self.$image, imageData: self.$imageData)
+        }.sheet(isPresented: $signupViewModel.showImagePicker){
+            ImagePicker(showImagePicker: self.$signupViewModel.showImagePicker, pickedImage: self.$signupViewModel.image, imageData: self.$signupViewModel.imageData)
         }
         .navigationBarTitle("Register", displayMode: .inline)
     }

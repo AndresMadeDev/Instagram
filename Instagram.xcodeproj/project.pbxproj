@@ -28,6 +28,9 @@
 		C1A3286A2418792C00C7F184 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A328692418792C00C7F184 /* ImagePicker.swift */; };
 		C1A3286C241C160900C7F184 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3286B241C160900C7F184 /* User.swift */; };
 		C1A3286E241C191700C7F184 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3286D241C191700C7F184 /* Extensions.swift */; };
+		C1A32870241C892B00C7F184 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3286F241C892B00C7F184 /* SignupViewModel.swift */; };
+		C1A32872241C8CE600C7F184 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A32871241C8CE600C7F184 /* AuthService.swift */; };
+		C1A32874241C903600C7F184 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A32873241C903600C7F184 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		C1A328692418792C00C7F184 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C1A3286B241C160900C7F184 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1A3286D241C191700C7F184 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1A3286F241C892B00C7F184 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		C1A32871241C8CE600C7F184 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C1A32873241C903600C7F184 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				C191AACF23FC380E001C9724 /* SceneDelegate.swift */,
 				C191AAD123FC380E001C9724 /* SignInView.swift */,
 				C1A328612415BFFC00C7F184 /* SingUpView.swift */,
+				C1A32871241C8CE600C7F184 /* AuthService.swift */,
+				C1A3286F241C892B00C7F184 /* SignupViewModel.swift */,
+				C1A32873241C903600C7F184 /* StorageService.swift */,
 				C1A328692418792C00C7F184 /* ImagePicker.swift */,
 				C1A3286B241C160900C7F184 /* User.swift */,
 				C1A3286D241C191700C7F184 /* Extensions.swift */,
@@ -265,9 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A32870241C892B00C7F184 /* SignupViewModel.swift in Sources */,
 				C191AACE23FC380E001C9724 /* AppDelegate.swift in Sources */,
 				C191AAE723FC4B96001C9724 /* HeaderView.swift in Sources */,
+				C1A32872241C8CE600C7F184 /* AuthService.swift in Sources */,
 				C191AAE923FC4BC2001C9724 /* EmailTextField.swift in Sources */,
+				C1A32874241C903600C7F184 /* StorageService.swift in Sources */,
 				C1A328642415C16700C7F184 /* UserNameTextField.swift in Sources */,
 				C191AAE523FC4B27001C9724 /* SignUpView.swift in Sources */,
 				C1A3286A2418792C00C7F184 /* ImagePicker.swift in Sources */,
